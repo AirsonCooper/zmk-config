@@ -33,17 +33,17 @@
         lower_layer {
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |  F10 |  F11 |  F12 |
+// |       |     | F2  |      |      |  F5  |                   |      |       |       |  F10 |  F11 |  F12 |
 // |       |  ^  |  $  |  -   |  [   |   ]  |                   |   7  |   8   |   9   |  F7  |  F8  |  F9  |
 // | ENTER |  *  |  !  |  =   |  (   |   )  |                   |   4  |   5   |   6   |  F4  |  F5  |  F6  |
 // |       |  %  |  @  |  +   |  &   |   |  |        |  |       |   1  |   2   |   3   |  F1  |  F2  |  F3  |
 //               |     |      |      |      | SPACE  |  | SPACE |      |   0   |   .   |   \  |
             bindings = <
-&trans   &trans           &trans    &trans       &trans    &trans                          &trans   &trans    &trans      &kp F10   &kp F11   &kp F12
+&trans   &trans           &kp F2    &trans       &trans    &kp F5                          &trans   &trans    &trans      &kp F10   &kp F11   &kp F12
 &trans   &kp CARET        &kp DLLR  &kp MINUS    &kp LBKT  &kp RBKT                        &kp N7   &kp N8    &kp N9      &kp F7    &kp F8    &kp F9
 &kp RET  &kp KP_MULTIPLY  &kp EXCL  &kp EQUAL    &kp LPAR  &kp RPAR                        &kp N4   &kp N5    &kp N6      &kp F4    &kp F5    &kp F6
 &trans   &kp PRCNT        &kp AT    &kp KP_PLUS  &kp AMPS  &kp PIPE  &trans     &trans     &kp N1   &kp N2    &kp N3      &kp F1    &kp F2    &kp F3
-                         &trans    &trans       &trans    &trans     &kp SPACE  &kp SPACE  &trans   &kp N0    &kp KP_DOT  &kp BSLH
+                          &trans    &trans       &trans    &trans    &kp SPACE  &kp SPACE  &trans   &kp N0    &kp KP_DOT  &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
